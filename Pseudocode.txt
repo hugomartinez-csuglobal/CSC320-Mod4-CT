@@ -1,0 +1,25 @@
+START
+    CREATE a Scanner object to read input
+    INITIALIZE total to 0
+    INITIALIZE max to the smallest possible value
+    INITIALIZE min to the largest possible value
+
+    DISPLAY message to user: "Enter 10 student grades:"
+
+    FOR i FROM 1 TO 10 DO
+        READ grade as a floating-point number
+        ADD grade to total
+        IF grade > max THEN
+            SET max = grade
+        ENDIF
+        IF grade < min THEN
+            SET min = grade
+        ENDIF
+    END FOR
+
+    CALCULATE average = total / 10
+
+    DISPLAY "Average: " + average
+    DISPLAY "Maximum: " + max
+    DISPLAY "Minimum: " + min
+END
